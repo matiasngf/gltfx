@@ -1,0 +1,16 @@
+{
+  "name": "three-model-monorepo",
+  "description": "A monorepo of three utils to handle 3D models",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+  },
+  "dependencies": {
+    "turbo": "latest",
+    "prettier": "latest",
+    "@three-model/eslint-config-custom": "workspace:*"
+  }
+}
